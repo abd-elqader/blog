@@ -2,17 +2,16 @@
 
 <img src="https://app.elnakoury.com/public/assets/img/banner/hero-banner.png">
 
-**Created By :** Mahmoud Anwar
-**Email :** Engsahaly@gmail.com
+**Created By :** Abdelkader Montaser
+**Email :** abdelqader.montaser@gmail.com
 
-This is the main readme file for the code used in laravel for absolute beginners course on Udemy (Level 1 - Project)
-
+This is the main readme file for the code used in laravel
 ## Installation
 
 To get started, clone this repository.
 
 ```
-git clone https://github.com/engsahaly/laravel_course_level_1_project.git
+git clone https://github.com/abd-elqader/blog.git
 ```
 
 Next, copy your `.env.example` file as `.env` and configure your Database connection.
