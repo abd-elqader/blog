@@ -1,6 +1,6 @@
 ## Laravel For Absolute Beginners Course Files on Udemy (PROJECT)
 
-<img src="[https://img-b.udemycdn.com/course/750x422/5747534_0b8e_2.jpg](https://app.elnakoury.com/public/assets/img/banner/hero-banner.png)">
+<img src="https://app.elnakoury.com/public/assets/img/banner/hero-banner.png">
 
 **Created By :** Mahmoud Anwar
 **Email :** Engsahaly@gmail.com
