@@ -6,9 +6,7 @@
                 <div class="single-footer-widget">
                     <h6>About Us</h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore dolore
-                        magna aliqua.
+                        sofa is a lifestyle, travel, technology, etc. blog dedicated to inspiring, informing, entertaining our readers. We believe in authenticity, creativity, inclusivity and strive to provide valuable content, foster a sense of community, etc.
                     </p>
                 </div>
             </div>
@@ -61,16 +59,16 @@
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
                     <div class="footer-social d-flex align-items-center">
-                        <a href="#">
+                        <a href="https://www.facebook.com/" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/?lang=en" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://dribbble.com/" target="_blank">
                             <i class="fab fa-dribbble"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.behance.net/" target="_blank">
                             <i class="fab fa-behance"></i>
                         </a>
                     </div>
