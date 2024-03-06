@@ -69,12 +69,12 @@
                             <input type="hidden" name="blog_id" value="{{ $blog->id }}">
                             <div class="form-group form-inline">
                                 <div class="form-group col-lg-6 col-md-6 name">
-                                    <input type="text" class="form-control" name="name" placeholder="Enter Name"
+                                    <input type="text" class="form-control" name="name" value="{{ Auth::user()->name?? null }}" placeholder="Enter Name"
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
                                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6 email">
-                                    <input type="email" class="form-control" name="email"
+                                    <input type="email" class="form-control" name="email" value="{{ Auth::user()->email?? null }}"
                                         placeholder="Enter email address" onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Enter email address'">
                                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
