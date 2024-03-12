@@ -7,6 +7,7 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\Auth\AdminAuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,22 @@ use App\Http\Controllers\SubscriberController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::middleware('guest')->name('dashboard.')->group(function () {
+    Route::get('login', [AdminAuthenticatedSessionController::class, 'create'])
+        ->name('login');
+
+    Route::post('login', [AdminAuthenticatedSessionController::class, 'store']);
+});
+
+Route::middleware(['auth:admin'])->group(function () {
+    // Routes accessible to administrators
+    Route::view('/dashboard', 'dashboard.index');
+});
+// ADMIN DASHBOARD
+Route::middleware('guest')->group(function () {
+    Route::view('/dashboard/admin/login', 'dashboard.auth.login');
+});
+
 
 // THEME ROUTES
 Route::controller(ThemeController::class)->name('theme.')->group(function () {
