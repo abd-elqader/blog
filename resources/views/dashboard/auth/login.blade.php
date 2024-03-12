@@ -21,16 +21,19 @@
                                 </a>
                                 
                                 <p class="text-center">learning new skills</p>
-                                <form action="{{ route("") }}" method="POST">
+                                <form action="{{ route("dashboard.store") }}" method="POST">
+                                    @csrf
                                     <div class="mb-3">
-                                        <label for="Email" class="form-label">Username</label>
+                                        <label for="Email" class="form-label">email</label>
                                         <input type="email" name="email" class="form-control" id="Email"
-                                            aria-describedby="emailHelp">
+                                            aria-describedby="emailHelp" required>
                                     </div>
+                                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
                                     <div class="mb-4">
                                         <label for="Password" class="form-label">Password</label>
                                         <input type="password" name="password" class="form-control" id="Password">
                                     </div>
+                                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <div class="form-check">
                                             <input class="form-check-input primary" type="checkbox" value="1"
