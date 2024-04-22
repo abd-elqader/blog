@@ -1,4 +1,4 @@
-## Laravel For Absolute Beginners Course Files on Udemy (PROJECT)
+## Blog
 
 <img src="https://app.elnakoury.com/public/assets/img/banner/hero-banner.png">
 
