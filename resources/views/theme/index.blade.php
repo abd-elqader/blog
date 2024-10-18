@@ -53,7 +53,7 @@
                             @foreach ($blogs as $blog)
                                 <div class="single-recent-blog-post">
                                     <div class="thumb">
-                                        <img class="w-100 img-fluid" src="{{ asset("storage/blogs/$blog->image") }}"
+                                        <img class="w-100 img-fluid" style="height: 300px" src="{{ asset("storage/blogs/$blog->image") }}"
                                             alt="">
                                         <ul class="thumb-info">
                                             <li><a href="#"><i class="ti-user"></i>{{ $blog->user->name }}</a></li>
