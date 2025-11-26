@@ -55,8 +55,11 @@
                     @foreach ($recentBlogs as $blog)
                         <div class="single-post-list">
                             <div class="thumb">
-                                <img class="card-img rounded-0" src="{{ asset("storage/blogs/$blog->image") }}"
-                                    alt="">
+                                <img class="card-img rounded-0" 
+                                    src="{{ asset("storage/$blog->image") }}"
+                                    alt=""
+                                    style="width: 100%; height: 300px; object-fit: cover;"
+                                >
                                 <ul class="thumb-info">
                                     <li><a href="#">{{ $blog->user->name }}</a></li>
                                     <li><a href="#">{{ $blog->created_at->format('d M') }}</a></li>

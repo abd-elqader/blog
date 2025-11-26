@@ -27,7 +27,7 @@
                         @foreach ($sliderBlogs as $blog)
                             <div class="card blog__slide text-center">
                                 <div class="blog__slide__img">
-                                    <img class="card-img rounded-0" src="{{ asset("storage/blogs/$blog->image") }}"
+                                    <img class="card-img rounded-0" src="{{ asset("storage/$blog->image") }}"
                                         alt="" height="100px">
                                 </div>
                                 <div class="blog__slide__content">
@@ -53,8 +53,11 @@
                             @foreach ($blogs as $blog)
                                 <div class="single-recent-blog-post">
                                     <div class="thumb">
-                                        <img class="w-100 img-fluid" style="height: 300px" src="{{ asset("storage/blogs/$blog->image") }}"
-                                            alt="">
+                                        <img
+                                            style="width: 100%; height: 300px; object-fit: cover;" 
+                                            src="{{ asset("storage/$blog->image") }}"
+                                            alt=""
+                                        >
                                         <ul class="thumb-info">
                                             <li><a href="#"><i class="ti-user"></i>{{ $blog->user->name }}</a></li>
                                             <li><a href="#"><i

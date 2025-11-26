@@ -10,7 +10,11 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="main_blog_details">
-                        <img class="w-100 img-fluid" src="{{ asset("storage/blogs/$blog->image") }}" alt="">
+                        <img
+                            src="{{ asset("storage/$blog->image") }}" 
+                            alt="blog image"
+                            style="width: 100%; height: 300px; object-fit: cover;"
+                        >
                         <a href="#">
                             <h4>{{ $blog->name }}</h4>
                         </a>
@@ -55,7 +59,7 @@
                         </div>
                     @endif
 
-                    <div class="comment-form">
+                    <div class="comment-form" style="margin-top: 50px;">
                         <h4>Leave a Reply</h4>
 
                         @if (session('commentCreateStatus'))

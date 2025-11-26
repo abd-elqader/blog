@@ -16,7 +16,9 @@
                                 <div class="col-md-6">
                                     <div class="single-recent-blog-post card-view">
                                         <div class="thumb">
-                                            <img class="card-img rounded-0" src="{{ asset("storage/blogs/$blog->image") }}"
+                                            <img 
+                                                style="width: 100%; height: 300px; object-fit: cover;"
+                                                src="{{ asset("storage/$blog->image") }}"
                                                 alt="">
                                             <ul class="thumb-info">
                                                 <li><a href="#"><i class="ti-user"></i>{{ $blog->user->name }}</a>
@@ -35,6 +37,15 @@
                                     </div>
                                 </div>
                             @endforeach
+                        @else
+                            <div class="col-12 text-center">
+                                <img 
+                                    src="{{ asset('assets/img/no-data-found.png') }}" 
+                                    alt="No Data Found" 
+                                    class="img-fluid"
+                                    style="max-height: 400px;"
+                                >
+                            </div>
                         @endif
                     </div>
 
